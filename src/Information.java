@@ -1,4 +1,4 @@
 public interface Information {
-    String[][] map = new String[1000][1000];
+    int[][] map = new int[1000][1000];
 
 }

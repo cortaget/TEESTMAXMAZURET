@@ -31,10 +31,10 @@ public class Map implements Information{
     }
 
     public void showMap(){
-        //map[0][2] = 2;
+
         for (int i = 0;i< y;i++){
             for (int l = 0;l< x;l++){
-                System.out.print(" "+map[x][y]+" ");
+                System.out.print(" "+map[l][i]+" ");
             }
             System.out.println();
         }
