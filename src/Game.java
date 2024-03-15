@@ -4,8 +4,14 @@ public class Game {
     Map map = new Map(3,3);
     public void start(){
         map.showMap();
-        player1.ChangePoint(0,1);
-        System.out.println();
-        map.showMap();
+        while (true){
+            player1.playerChoose();
+            map.showMap();
+            player2.playerChoose();
+            map.showMap();
+        }
+
+
+
     }
 }
