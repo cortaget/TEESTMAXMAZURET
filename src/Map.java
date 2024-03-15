@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 public class Map implements Information{
     private int x,y;
 
@@ -39,4 +40,8 @@ public class Map implements Information{
             System.out.println();
         }
     }
+=======
+public class Map {
+
+>>>>>>> origin/master
 }
