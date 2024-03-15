@@ -14,12 +14,21 @@ public class Player implements Information{
     }
 
     public void playerChoose(){
-        int coardinates;
-        coardinates = scanner.nextInt();
-        x1 = coardinates;
-        coardinates = scanner.nextInt();
-        y1 = coardinates;
-        changePoint(x1,y1);
+        while (true){
+            int coardinates;
+            coardinates = scanner.nextInt();
+            x1 = coardinates;
+            coardinates = scanner.nextInt();
+            y1 = coardinates;
+            if (map[x1][y1]==0){
+                changePoint(x1,y1);
+                break;
+            }else {
+                System.out.println("you can't do this!!! Fucking cheater!!!!!REPIT");
+            }
+        }
+
+
     }
 
 

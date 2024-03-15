@@ -1,5 +1,5 @@
-public class Map implements Information{
-    private int x,y;
+public class Map implements Information {
+    private int x, y;
 
     public Map(int x, int y) {
         this.x = x;
@@ -30,14 +30,21 @@ public class Map implements Information{
                 '}';
     }
 
-    public void showMap(){
+    public void showMap() {
 
-        for (int i = 0;i< y;i++){
-            for (int l = 0;l< x;l++){
-                System.out.print(" "+map[l][i]+" ");
+        for (int i = 0; i < y; i++) {
+            for (int l = 0; l < x; l++) {
+                if (map[l][i] == 1) {
+                    System.out.print(" o ");
+                } else if (map[l][i] == 2) {
+                    System.out.print(" x ");
+                } else if (map[l][i] == 0) {
+                    System.out.print(" . ");
+                }
             }
-            System.out.println();
-        }
-    }
+                System.out.println();
 
+        }
+
+    }
 }
