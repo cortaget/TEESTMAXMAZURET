@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class Player {
+public class Player implements Data{
     protected String name;
     protected int level, strengh, inteligent, agility, defense, exp,point,health;
     protected RaceType race;
@@ -12,7 +12,7 @@ public class Player {
 
 
     public Player() {
-        this.level = 5;
+        this.level = 1;
         this.health = level*10;
         strengh = 0;
         this.inteligent = 0;
@@ -82,12 +82,13 @@ public class Player {
             exp = exp-(level*100);
             level++;
             point+=3;
-            levelUp();
         }
+        levelUp();
+        info[1] = level;
+
     }
 
     public void levelUp(){
-        if (point >0) {
             int support;
             for (int i = 0; i < point; point--) {
                 System.out.println(toString());
@@ -116,7 +117,6 @@ public class Player {
                     break;
                 }
             }
-        }
     }
 
     public RaceType getRace() {
