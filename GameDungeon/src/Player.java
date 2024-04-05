@@ -20,6 +20,7 @@ public class Player implements Data{
         this.defense = 0;
         this.exp = 0;
         point = 5;
+        info[1] = 1;
     }
 
 
